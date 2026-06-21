@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
-import { PwaInstallPrompt } from "@/components/PwaInstallPrompt";
 import { OfflineIndicator } from "@/components/OfflineIndicator";
 import "./globals.css";
 
@@ -55,7 +54,6 @@ export default function RootLayout({
         <ServiceWorkerRegister />
         <OfflineIndicator />
         {children}
-        <PwaInstallPrompt />
       </body>
     </html>
   );
