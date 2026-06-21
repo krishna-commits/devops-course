@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:content": "node scripts/validate-content.mjs && npx --yes tsx scripts/validate-tool-format.ts"
   },
   "dependencies": {
     "next": "16.2.9",

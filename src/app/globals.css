@@ -1,26 +1,166 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.2s ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.98) translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fade-in 0.15s ease-out;
+}
+
+pre code {
+  white-space: pre;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(161 161 170 / 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(161 161 170 / 0.6);
+}
+
+/* Footer dot-grid (light theme) */
+.footer-mesh {
+  background-image: radial-gradient(circle at 1px 1px, rgb(99 102 241 / 0.07) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+/* Print / PDF-friendly guides */
+@media print {
+  header,
+  aside,
+  nav,
+  footer {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: #111 !important;
+    font-size: 11pt;
+  }
+
+  #guide-content {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .code-block pre,
+  pre {
+    background: #f4f4f5 !important;
+    color: #18181b !important;
+    border: 1px solid #d4d4d8;
+    font-size: 9pt !important;
+    overflow: visible !important;
+    white-space: pre-wrap !important;
+    word-break: break-word;
+  }
+
+  .code-block pre span,
+  pre code span {
+    color: #18181b !important;
+  }
+
+  section,
+  article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    color: #111 !important;
+  }
+
+  a {
+    color: #111 !important;
+    text-decoration: underline;
+  }
+}
+
+/* Cheat sheet print layout */
+@media print {
+  .cheatsheet-page .rounded-2xl.border {
+    border: none !important;
+    background: white !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .cheatsheet-page h1 {
+    font-size: 18pt !important;
+  }
+
+  .cheatsheet-page table {
+    font-size: 9pt !important;
+    page-break-inside: auto;
+  }
+
+  .cheatsheet-page tr {
+    page-break-inside: avoid;
+  }
+
+  .cheatsheet-page section {
+    page-break-before: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .cheatsheet-page section h2 {
+    font-size: 12pt !important;
+    border-bottom: 1px solid #ccc !important;
+  }
+
+  .cheatsheet-page code {
+    color: #111 !important;
+    font-size: 8.5pt !important;
+  }
 }
