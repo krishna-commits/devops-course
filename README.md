@@ -1,10 +1,10 @@
 # 🚀 **DevOps World – Setup, Installation, Runbooks & Guides**
 
-[![GitHub stars](https://img.shields.io/github/stars/krishna-commits/devops?style=social)](https://github.com/krishna-commits/devops/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/krishna-commits/devops?style=social)](https://github.com/krishna-commits/devops/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/krishna-commits/devops)](https://github.com/krishna-commits/devops/issues)
-[![GitHub license](https://img.shields.io/github/license/krishna-commits/devops)](https://github.com/krishna-commits/devops/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/krishna-commits/devops/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/krishna-commits/devops-course?style=social)](https://github.com/krishna-commits/devops-course/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/krishna-commits/devops-course?style=social)](https://github.com/krishna-commits/devops-course/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/krishna-commits/devops-course)](https://github.com/krishna-commits/devops-course/issues)
+[![GitHub license](https://img.shields.io/github/license/krishna-commits/devops-course)](https://github.com/krishna-commits/devops-course/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/krishna-commits/devops-course/pulls)
 [![Live site](https://img.shields.io/badge/live-devops.krishnaneupane.com-blue)](https://devops.krishnaneupane.com)
 
 <div align="center">
@@ -27,8 +27,6 @@
 - [📋 Tool Installation Guides](#-tool-installation-guides)
 - [🚨 Runbooks & Ship-it Flows](#-runbooks--ship-it-flows)
 - [📖 How to Use This Repository](#-how-to-use-this-repository)
-- [💻 Local Development](#-local-development)
-- [📅 Planned Updates](#-planned-updates)
 - [⭐ Support & Contribution](#-support--contribution)
 - [📢 Author & Contact](#-author--contact)
 
@@ -407,32 +405,17 @@
 
 ---
 
-
-```bash
-
-| Path | Purpose |
-|------|---------|
-| `src/lib/tools/` | Tool guide source (one file per tool) |
-| `src/lib/runbooks.ts` | Incident runbooks |
-| `src/lib/snippets.ts` | Copy-paste commands |
-| `src/lib/flows.ts` | Ship-it flows |
-| `src/lib/deployments/` | Compose, K8s, CI, Terraform templates |
-
-Stack: Next.js 16 · React 19 · TypeScript · Tailwind 4 · static export · PWA
-
----
-
 ## ⭐ **Support & Contribution**
 
 <div align="center">
 
 If this helps you on-call or at deploy time:
 
-✅ **Star** ⭐ the [repository](https://github.com/krishna-commits/devops)  
+✅ **Star** ⭐ the [repository](https://github.com/krishna-commits/devops-course)  
 ✅ **Fork** 🍴 and open a PR — snippets, runbooks, tool guides  
-✅ **Report** stale commands via [GitHub Issues](https://github.com/krishna-commits/devops/issues) or [contact](https://krishnaneupane.com/contact)
+✅ **Report** stale commands via [GitHub Issues](https://github.com/krishna-commits/devops-course/issues) or [contact](https://krishnaneupane.com/contact)
 
-See also [https://devops.krishnaneupane.com/contribute/](https://devops.krishnaneupane.com/contribute/) on the live site.
+See also [`/contribute/`](https://devops.krishnaneupane.com/contribute/) on the live site.
 
 **🚀 Help build the toolkit engineers actually use at 3am.**
 
@@ -465,7 +448,7 @@ See also [https://devops.krishnaneupane.com/contribute/](https://devops.krishnan
 
 If you're using this for learning or on-call reference, please give it a ⭐.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=krishna-commits/devops&type=Date)](https://star-history.com/#krishna-commits/devops&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=krishna-commits/devops-course&type=Date)](https://star-history.com/#krishna-commits/devops-course&Date)
 
 [⬆️ Back to Top](#-devops-world--setup-installation-runbooks--guides)
 
